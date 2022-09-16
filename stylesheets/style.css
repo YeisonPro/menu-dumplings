@@ -1,0 +1,43 @@
+body {
+  background-image: url('https://st4.depositphotos.com/3581215/28734/v/450/depositphotos_287342700-stock-illustration-vector-background-of-dumplings-with.jpg');
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  padding-top: 80px;
+}
+
+h2, p {
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.content {
+  background-color: #ffffff;
+}
+
+.content-2 {
+  background-color: #F6E7E2;
+
+}
+
+.content-3 {
+  background-color: #F0D1C9;
+
+}
+
+.content-4 {
+  background-color: #EAC0B6;
+}
+
+.center {
+  width: 450px;
+  margin: 0px auto;
+  border-radius: 50% 50% 0 0;
+}
+
+.title {
+  box-sizing: content-box;
+  text-align: center;
+}
