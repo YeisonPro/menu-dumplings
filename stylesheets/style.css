@@ -91,18 +91,13 @@ button {
   transition: all .2s ease-in-out;
 }
 
-button:hover {
-  color: #fff;
-  background-color: #6a95f2;
-}
-
 .navbar-lewagon {
   justify-content: space-around;
   background: #fff;
 }
 
 .navbar-lewagon img {
-  width: 40px;
+  width: 80px;
 }
 
 /* In this project the media queries wasn't  used because the 'card' be so small to adaptable it to other resolutions */
