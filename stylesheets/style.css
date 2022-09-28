@@ -87,7 +87,7 @@ button {
   margin-bottom: 1rem;
   border-radius: .4rem;
   background-color: #dfaf7d;
-  border: 2px solid #6a95f2;
+  border: 2px solid #dda66c;
   transition: all .2s ease-in-out;
 }
 
@@ -98,7 +98,7 @@ button:hover {
 
 .navbar-lewagon {
   justify-content: space-around;
-  background: white;
+  background: #fff;
 }
 
 .navbar-lewagon img {
