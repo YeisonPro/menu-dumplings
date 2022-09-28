@@ -1,6 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #dfaf7d;
+}
+
 .maincontainer {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
 }
@@ -12,36 +23,36 @@
 }
 
 .card {
-  background-color: #fff;
-  border-radius: .6rem;
   margin: 1rem;
-  width: 700px;
-  /* min-width: 700px; */
+  width: 400px;
+  min-width: 18rem;
+  border-radius: .6rem;
+  background-color: #fff;
 }
 
 .card .card-header {
-  font-size: 1.6rem;
   padding: .5rem 1rem;
+  font-size: 1.6rem;
 }
 
 .card .card-header .uno {
-  border: 2px solid rgba(0,0,0,.6);
-  border-radius: 5rem;
-  color: rgba(0,0,0,.6);
   display: grid;
-  font-size: 1rem;
+  width: 1.6rem;
   height: 1.6rem;
-  margin-top: 0.4rem;
+  margin-top: .4rem;
+  font-size: 1rem;
+  border-radius: 5rem;
   place-items: center;
-  width: 65px;
+  color: rgb(0 0 0 / 60%);
+  border: 2px solid rgb(0 0 0 / 60%);
 }
 
 .card .card-header .type {
-  border-radius: 5rem;
-  color: rgba(0,0,0,.6);
   font-size: .9rem;
-  margin-top: 0.4rem;
+  margin-top: .4rem;
+  border-radius: 5rem;
   text-transform: uppercase;
+  color: rgb(0 0 0 / 60%);
 }
 
 .card .card-header h3 {
@@ -52,14 +63,14 @@
   font-size: .8rem;
 }
 
-.card .card-body {
+/* .card .card-body {
   display: grid;
   place-items: center;
-}
+} */
 
 .card .card-body .food-image {
-  max-height: 100%;
   max-width: 80%;
+  max-height: 100%;
   overflow: hidden;
 }
 
@@ -68,58 +79,30 @@
 }
 
 button {
-  background-color: #fff;
-  border: 2px solid #6a95f2;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  float: right;
-  font-size: .9rem;
-  height: 2.5rem;
-  margin-bottom: 1rem;
-  transition: all .2s ease-in-out;
   width: 8rem;
-  position: relative;
-  left: 75px;
-  top: 18px;
+  float: right;
+  height: 2.5rem;
+  cursor: pointer;
+  font-size: .9rem;
+  margin-bottom: 1rem;
+  border-radius: .4rem;
+  background-color: #dfaf7d;
+  border: 2px solid #6a95f2;
+  transition: all .2s ease-in-out;
 }
 
 button:hover {
-  background-color: #6a95f2;
   color: #fff;
+  background-color: #6a95f2;
 }
 
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .maincontainer {
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.navbar-lewagon {
+  justify-content: space-around;
+  background: white;
 }
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .maincontainer {
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
+.navbar-lewagon img {
+  width: 40px;
 }
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .maincontainer {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  }
 
-  button {
-    position: relative;
-    left: 18px;
-    top: 20px;
-  }
-}
+/* In this project the media queries wasn't  used because the 'card' be so small to adaptable it to other resolutions */
