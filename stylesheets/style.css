@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #dfaf7d;
+  background: linear-gradient(to bottom, #f2dcb4, #ffe38f);
 }
 
 .maincontainer {
@@ -28,11 +28,25 @@ body {
   min-width: 18rem;
   border-radius: .6rem;
   background-color: #fff;
+  position: relative;
+}
+
+.card::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  content: ' ';
+  background: linear-gradient(to right, #f12711, #f5af19);
+  width: 100%;
+  height: 100%;
+  filter: blur(14px);
+  z-index: -1;
 }
 
 .card .card-header {
   padding: .5rem 1rem;
   font-size: 1.6rem;
+  background: #ffe7cd;
 }
 
 .card .card-header .uno {
@@ -43,7 +57,6 @@ body {
   font-size: 1rem;
   border-radius: 5rem;
   place-items: center;
-  color: rgb(0 0 0 / 60%);
   border: 2px solid rgb(0 0 0 / 60%);
 }
 
@@ -52,7 +65,7 @@ body {
   margin-top: .4rem;
   border-radius: 5rem;
   text-transform: uppercase;
-  color: rgb(0 0 0 / 60%);
+
 }
 
 .card .card-header h3 {
@@ -63,10 +76,11 @@ body {
   font-size: .8rem;
 }
 
-/* .card .card-body {
+.card .card-body {
   display: grid;
   place-items: center;
-} */
+  background: #ffe7cd;
+}
 
 .card .card-body .food-image {
   max-width: 80%;
@@ -76,9 +90,12 @@ body {
 
 .card img {
   max-width: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to right, #f12711, #f5af19);
 }
 
 button {
+  margin-top: 14px;
   width: 8rem;
   float: right;
   height: 2.5rem;
@@ -86,18 +103,21 @@ button {
   font-size: .9rem;
   margin-bottom: 1rem;
   border-radius: .4rem;
-  background-color: #dfaf7d;
-  border: 2px solid #dda66c;
+  background-color: #ffe4b2;
+  border: 2px solid #efd3a0;
   transition: all .2s ease-in-out;
 }
 
 .navbar-lewagon {
   justify-content: space-around;
-  background: #fff;
+  background: linear-gradient(to bottom, #f2dcb4, #ffe38f);
 }
 
 .navbar-lewagon img {
   width: 80px;
+  border-radius: 60%;
 }
+
+
 
 /* In this project the media queries wasn't  used because the 'card' be so small to adaptable it to other resolutions */
